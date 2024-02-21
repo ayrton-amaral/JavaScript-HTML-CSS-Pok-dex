@@ -1,0 +1,107 @@
+/* Font: */
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', cursive;
+}
+
+body {
+    text-align: center;
+    background: linear-gradient(to bottom, #6AB7F5, #FFF);
+    min-height: 100vh; /* viewport height - total da tela */
+  }
+
+  main {
+    display: inline-block;
+    margin-top: 5%;
+    padding: 15px;
+    position: relative;
+  }
+
+  .pokedex {
+    width: 100%;
+    max-width: 425px;
+  }
+
+  .pokemon_image {
+    position: absolute;
+    bottom: 55%; /* referente ao tamanho da main essa porcentagem */
+    left: 50%;
+    /* translate modifica a posicao da imagem tbm */
+    transform: translate(-65%, 20%);
+    height: 16%;
+  }
+
+  .poke_data {
+    position: absolute;
+    font-weight: 600;
+    color: #AAA;
+    top: 54.5%;
+    right: 28%;
+    /* clamp(minimo, desejavel, maximo); */
+    font-size: clamp(8px, 5vw, 25px); /* vw - viewport width */
+  }
+
+  /* pokemon_number */
+
+  .pokemon_name {
+    color: #3A444D;
+    text-transform: capitalize;
+  }
+
+  .form {
+    position: absolute;
+    width: 65%;
+    top: 65%;
+    left: 13.5%;
+  }
+
+  .input_search {
+    width: 100%;
+    padding: 4%;
+    outline: none;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #3A444D;
+    /* sobre rem:  */
+    font-size: clamp(8px, 5vw, 1rem);
+    /* box-shadow: eixo-x eixo-y desfoque cor, outra sombra; */
+    box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
+  }
+
+  .buttons {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 65%;
+    transform: translate(-55%, 0);
+    /* alinhando o prev e o next lado a lado 
+       e um gap entre eles */
+    display: flex;
+    gap: 20px;
+  }
+
+  .button {
+    width: 50%;
+    padding: 4%;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: clamp(8px, 5vw, 1rem);
+    font-weight: 600;
+    color: white;
+    background-color: #444;
+    box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+  }
+
+  /* classe button e a pseudo-classe active.
+     Quando eu clicar e segurar o botao,
+     quando ele estiver 'ativo': */
+  .button:active {
+    box-shadow: inset -4px 4px 0 #222;
+    font-size: 0.93rem;
+  }
