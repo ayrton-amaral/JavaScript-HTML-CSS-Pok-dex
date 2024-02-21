@@ -2,7 +2,7 @@
 
 ## Overview
 
-The 'Pokédex Web Application' is a web development project that serves as a comprehensive Pokédex for the Pokémon game. It utilizes the PokeAPI as a data source to provide information about various Pokémon. The project was created by Ayrton Senna Seraphim do Amaral and developed in January 2024.
+The 'Pokédex Web Application' is a web development project that serves as a comprehensive Pokédex for the Pokémon game. It utilizes the PokéAPI as a data source to provide information about various Pokémon. The project was developed by me, Ayrton Senna Seraphim do Amaral, in January 2024.
 
 ## Features
 
